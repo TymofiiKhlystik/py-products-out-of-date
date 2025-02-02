@@ -20,5 +20,8 @@ from app.main import outdated_products
         )
     ]
 )
-def test_outdated_products(test_outdated_products, expected_products):
+def test_outdated_products(
+        test_outdated_products: list,
+        expected_products: list
+) -> None:
     assert outdated_products(test_outdated_products) == expected_products
