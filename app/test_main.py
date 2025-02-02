@@ -18,7 +18,6 @@ def test_outdated_products() -> None:
         "expiration_date": datetime.date(2022, 2, 1),
         "price": 160
     }]
-
     fake_today = datetime.date(2022, 2, 5)
 
     with patch("app.main.datetime") as mock_datetime:
